@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { PortableText } from "@portabletext/react";
 import sanityClient from "../config/sanity";
+import formatDate from "../helpers/formatDate";
 
 export const SinglePost = () => {
   const [singlePost, setSinglePost] = useState(null);
@@ -14,18 +15,22 @@ export const SinglePost = () => {
             title,
             _id,
             slug,
+            publishedAt,
             mainImage{
                 asset->{
                     _id,
                     url
                 }
             },
+            "name": author->name,
             body,
         }`
       )
       .then((data) => setSinglePost(data[0]))
       .catch(console.error);
   }, [slug]);
+
+  if (singlePost) console.log(singlePost);
 
   if (!singlePost) return <div>Loading...</div>;
 
@@ -48,8 +53,12 @@ export const SinglePost = () => {
         <div className="container py-lg-4 py-md-3 py-2">
           <div className="title-content text-left">
             <h3 className="title-w3l">{singlePost.title}</h3>
-            <h5 className="title-subhny mb-2">August 6, 2022</h5>
-            {/* <h5 className="title-subhny mb-2">{singlePost.publishedAt}</h5> */}
+            <h5 className="title-subhny mb-2">
+              <h5 className="title-subhny mb-2">
+                Written by {singlePost.name ? singlePost.name : "Author"} :{" "}
+                {formatDate(singlePost.publishedAt)}
+              </h5>
+            </h5>
             <section id="vision">
               <div className="ratio ratio-16x9">
                 <img
@@ -60,43 +69,8 @@ export const SinglePost = () => {
                 />
               </div>
               <p className="mt-md-4 mt-3">
-                {/* <SanityBlockContent
-                  blocks={singlePost.body}
-                  projectId={sanityClient.projectId}
-                  dataset={sanityClient.dataset}
-                /> */}
                 <PortableText value={singlePost.body} />
               </p>
-              {/* <p className="mt-md-4 mt-3">
-                His first encounter with Economics was as a student of Zang
-                Secondary Commercial School in Jos Plateau State. Abdullahi Sule
-                later in life proceeded to Indiana State University, Terre
-                Haute, Indiana, USA where he graduated with B.Sc. Mechanical
-                Technology and M.Sc. Industrial Technology in 1984 Lorem ipsum
-                dolor sit, amet consectetur adipisicing elit. Illo, saepe.
-                Asperiores dolore quod sit fugit eum assumenda tenetur ex omnis,
-                aliquam similique sint, excepturi recusandae libero ducimus
-                consequuntur aspernatur alias. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Molestias nisi harum dignissimos
-                sapiente, perspiciatis error, accusantium eligendi mollitia
-                omnis reprehenderit libero repellat provident facere totam cum!
-                Quia, ad. Molestias, expedita.
-              </p>
-              <p className="mt-md-4 mt-3">
-                His first encounter with Economics was as a student of Zang
-                Secondary Commercial School in Jos Plateau State. Abdullahi Sule
-                later in life proceeded to Indiana State University, Terre
-                Haute, Indiana, USA where he graduated with B.Sc. Mechanical
-                Technology and M.Sc. Industrial Technology in 1984 Lorem ipsum
-                dolor sit, amet consectetur adipisicing elit. Illo, saepe.
-                Asperiores dolore quod sit fugit eum assumenda tenetur ex omnis,
-                aliquam similique sint, excepturi recusandae libero ducimus
-                consequuntur aspernatur alias. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Molestias nisi harum dignissimos
-                sapiente, perspiciatis error, accusantium eligendi mollitia
-                omnis reprehenderit libero repellat provident facere totam cum!
-                Quia, ad. Molestias, expedita.
-              </p> */}
             </section>
           </div>
         </div>
