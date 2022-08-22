@@ -11025,16 +11025,13 @@ a.text-dark:focus {
  * -------------------------- */
 @font-face {
   font-family: "FontAwesome";
-  src: url("../public/assets/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("../public/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0")
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0")
       format("embedded-opentype"),
-    url("../public/assets//fonts/fontawesome-webfont.woff2?v=4.7.0")
-      format("woff2"),
-    url("../public/assets//fonts/fontawesome-webfont.woff?v=4.7.0")
-      format("woff"),
-    url("../public/assets/fonts/fontawesome-webfont.ttf?v=4.7.0")
-      format("truetype"),
-    url("../public/assets/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
+    url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+    url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
+    url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
+    url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
       format("svg");
   font-weight: normal;
   font-style: normal;
@@ -14994,7 +14991,7 @@ nav ul li a:hover {
   align-items: center;
   background-size: cover;
   -ms-background-size: cover;
-  background-image: var(--banner), url(../public/assets/images/banner6.png);
+  background-image: var(--banner), url(../images/banner6.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -15328,7 +15325,7 @@ h6.title {
   align-items: center;
   background-size: cover;
   -ms-background-size: cover;
-  background-image: var(--banner), url(../public/assets/images/banner2.jpg);
+  background-image: var(--banner), url(../images/banner2.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: top;
 }
@@ -16269,7 +16266,7 @@ a.sb {
 /*--/w3l-inner-page--*/
 .w3l-inner-page-breadcrumb {
   min-height: 260px;
-  background: url(../public/assets/images/banner-landscape.png) no-repeat center;
+  background: url(../images/banner-landscape.png) no-repeat center;
   -ms-background-size: cover;
   background-size: cover;
   z-index: 0;
@@ -16422,8 +16419,7 @@ h2.title {
   align-items: center;
   background-size: cover;
   -ms-background-size: cover;
-  background-image: var(--banner),
-    url(../public/assets/images/banner-landscape.png);
+  background-image: var(--banner), url(../images/banner-landscape.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
 }
@@ -16767,7 +16763,7 @@ h2.title {
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
-  /* background: url(../public/assets/images/owl.video.play.png) no-repeat; */
+  background: url(owl.video.play.png) no-repeat;
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
