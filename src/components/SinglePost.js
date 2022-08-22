@@ -49,6 +49,7 @@ export const SinglePost = () => {
           <div className="title-content text-left">
             <h3 className="title-w3l">{singlePost.title}</h3>
             <h5 className="title-subhny mb-2">August 6, 2022</h5>
+            {/* <h5 className="title-subhny mb-2">{singlePost.publishedAt}</h5> */}
             <section id="vision">
               <div className="ratio ratio-16x9">
                 <img

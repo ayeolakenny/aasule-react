@@ -73,7 +73,9 @@ export const Blogs = () => {
                       </Link>
                       <div className="blog-info">
                         <h4>
-                          <Link to="/detail">{post.title}</Link>
+                          <Link to={"/blog/" + post.slug.current}>
+                            {post.title}
+                          </Link>
                         </h4>
                       </div>
                     </div>

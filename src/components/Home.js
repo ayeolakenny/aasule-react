@@ -192,11 +192,11 @@ export const Home = () => {
                         style={{ height: "250px" }}
                       />
                     </Link>
-                    <h4>
+                    <h5>
                       <Link to={"/blog/" + post.slug.current}>
                         {post.title}
                       </Link>
-                    </h4>
+                    </h5>
                     <p>
                       {/* <SanityBlockContent
                         blocks={post.body}
