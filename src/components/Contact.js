@@ -69,7 +69,6 @@ export const Contact = () => {
                 className="signin-form"
                 action="https://sendpoint.io/id/j97G6u1Zb-"
               >
-                <input type="hidden" name="contact" value="contact" />
                 <div className="input-grids">
                   <input
                     type="text"
