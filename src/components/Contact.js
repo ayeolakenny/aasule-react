@@ -64,12 +64,7 @@ export const Contact = () => {
               </div>
             </div>
             <div className="contact-right">
-              <form
-                action="contact"
-                method="POST"
-                className="signin-form"
-                data-netlify="true"
-              >
+              <form method="POST" className="signin-form" netlify>
                 <div className="input-grids">
                   <input
                     type="text"
