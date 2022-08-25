@@ -102,9 +102,11 @@ export const Contact = () => {
                   />
                 </div>
                 <div className="submit-w3l-button text-lg-right">
-                  <button className="btn btn-style btn-primary" type="submit">
-                    Send Message
-                  </button>
+                  <input
+                    type="submit"
+                    value="Submit message"
+                    className="btn btn-style btn-primary"
+                  />
                 </div>
               </form>
             </div>
