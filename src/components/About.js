@@ -40,7 +40,7 @@ export const About = () => {
                   <h4>Follow Me</h4>
                   <div className="social-column-3 social-column-2 mt-3">
                     <a
-                      href="https://twitter.com/govaasule"
+                      href="https://twitter.com/Aasuleupdate"
                       target="_blank"
                       className="twitter"
                       rel="noreferrer"
@@ -49,7 +49,7 @@ export const About = () => {
                       <span className="social-text">Twitter</span>
                     </a>
                     <a
-                      href="https://web.facebook.com/govaasule?_rdc=1&_rdr"
+                      href="https://web.facebook.com/people/Audu-Alhaji-Sule/100084770477085/"
                       className="facebook"
                       rel="noreferrer"
                       target="_blank"

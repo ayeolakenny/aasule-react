@@ -34,10 +34,7 @@ export const Contact = () => {
                   </div>
                   <div className="cont-right">
                     <h6>Our head office address:</h6>
-                    <p>
-                      Lorem ipsum Agency, 343 marketing, #4148 Honey street,
-                      Ikoyi, Lagos - 62617.
-                    </p>
+                    <p>Nasarawa state Secretariat, Nassarawa</p>
                   </div>
                 </div>
                 <div className="cont-top margin-up">
@@ -47,10 +44,7 @@ export const Contact = () => {
                   <div className="cont-right">
                     <h6>Call for help :</h6>
                     <p>
-                      <a href="tel:+1(21) 234 4567">+234 234 557 4567</a>
-                    </p>
-                    <p>
-                      <a href="tel:+1(21) 234 4567">+234 234 557 4568</a>
+                      <a href="tel:+234 803 625 8195">+234 803 625 8195</a>
                     </p>
                   </div>
                 </div>
@@ -61,13 +55,8 @@ export const Contact = () => {
                   <div className="cont-right">
                     <h6>Mail us:</h6>
                     <p>
-                      <a href="mailto:support@mail.com" className="mail">
-                        support@mail.com
-                      </a>
-                    </p>
-                    <p>
-                      <a href="mailto:contact@mail.com" className="mail">
-                        contact@mail.com
+                      <a href="mailto:muhad1985@yahoo.com" className="mail">
+                        muhad1985@yahoo.com
                       </a>
                     </p>
                   </div>
@@ -76,14 +65,15 @@ export const Contact = () => {
             </div>
             <div className="contact-right">
               <form
-                action="https://sendmail.w3layouts.com/submitForm"
-                method="post"
+                action="contact"
+                method="POST"
                 className="signin-form"
+                data-netlify="true"
               >
                 <div className="input-grids">
                   <input
                     type="text"
-                    name="w3lName"
+                    name="Name"
                     id="w3lName"
                     placeholder="Your Name*"
                     className="contact-input"
@@ -91,7 +81,7 @@ export const Contact = () => {
                   />
                   <input
                     type="email"
-                    name="w3lSender"
+                    name="Sender"
                     id="w3lSender"
                     placeholder="Your Email*"
                     className="contact-input"
@@ -99,7 +89,7 @@ export const Contact = () => {
                   />
                   <input
                     type="text"
-                    name="w3lSubect"
+                    name="Subect"
                     id="w3lSubect"
                     placeholder="Subject*"
                     className="contact-input"
@@ -108,7 +98,7 @@ export const Contact = () => {
                 </div>
                 <div className="form-input">
                   <textarea
-                    name="w3lMessage"
+                    name="Message"
                     id="w3lMessage"
                     placeholder="Type your message here*"
                     required
@@ -116,7 +106,7 @@ export const Contact = () => {
                   />
                 </div>
                 <div className="submit-w3l-button text-lg-right">
-                  <button className="btn btn-style btn-primary">
+                  <button className="btn btn-style btn-primary" type="submit">
                     Send Message
                   </button>
                 </div>
@@ -127,14 +117,15 @@ export const Contact = () => {
       </section>
       <div className="map-iframe">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.6396832328073!2d7.699338464379007!3d8.534317243864999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e292b83ffcb0d%3A0xa9837c1cb655f48e!2sNasarawa%20LGA%20Secretariat!5e0!3m2!1sen!2sng!4v1661424268551!5m2!1sen!2sng"
           width="100%"
-          title="map"
           height={400}
-          frameBorder={0}
+          title="map"
           style={{ border: "0px" }}
-          allowFullScreen
-        />
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
   );

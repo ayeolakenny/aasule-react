@@ -61,9 +61,9 @@ export const Home = () => {
                 <h5 className="title-subhny mb-2">About Me</h5>
                 <h3 className="title-w3l">
                   <span>
-                    Egnr. AASULE is a leader &amp; mentor who loves simplicity
-                    and leads with the fear of God at heart.
-                  </span>
+                    Egnr. Abdullahi A. Sule. is a leader &amp; mentor who loves
+                    simplicity and leads with the fear of God at heart.
+                  </span>{" "}
                   AASULE 2023
                 </h3>
                 <p className="mt-4">
@@ -93,7 +93,7 @@ export const Home = () => {
                     <p className="title mt-2">Follow Me</p>
                     <div className="social-column-3 mt-3">
                       <a
-                        href="https://twitter.com/govaasule"
+                        href="https://twitter.com/Aasuleupdate"
                         target="_blank"
                         rel="noreferrer"
                         className="twitter"
@@ -111,7 +111,7 @@ export const Home = () => {
                         <span className="social-text">Instagram</span>
                       </a>
                       <a
-                        href="https://web.facebook.com/govaasule?_rdc=1&_rdr"
+                        href="https://web.facebook.com/people/Audu-Alhaji-Sule/100084770477085/"
                         target="_blank"
                         rel="noreferrer"
                         className="facebook"
