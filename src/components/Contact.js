@@ -64,7 +64,11 @@ export const Contact = () => {
               </div>
             </div>
             <div className="contact-right">
-              <form method="POST" className="signin-form" netlify>
+              <form
+                method="POST"
+                className="signin-form"
+                action="https://sendpoint.io/id/j97G6u1Zb-"
+              >
                 <input type="hidden" name="contact" value="contact" />
                 <div className="input-grids">
                   <input
@@ -102,11 +106,9 @@ export const Contact = () => {
                   />
                 </div>
                 <div className="submit-w3l-button text-lg-right">
-                  <input
-                    type="submit"
-                    value="Submit message"
-                    className="btn btn-style btn-primary"
-                  />
+                  <button type="submit" className="btn btn-style btn-primary">
+                    Submit
+                  </button>
                 </div>
               </form>
             </div>
